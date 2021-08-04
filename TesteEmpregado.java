@@ -1,3 +1,5 @@
+import java.util 
+
 public class TesteEmpregado {
     public static void main (String... args){
        Empregado e1 = new Empregado();
@@ -17,5 +19,10 @@ public class TesteEmpregado {
        System.out.println(e1.calcularSlario);
        System.out.println(e2.calcularSlario);
        System.out.println(e3.calcularSlario);
+
+       List <Empregado> emps = Arrays.asList(e1, e2, e3);
+       
+       for (Empregado e : emps)
+            System.out.println(e.calcularSlario());
     }
 }
