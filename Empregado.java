@@ -12,6 +12,20 @@
         }
         
         
+        public void setSalario ( double salario){
+            this.salario = salario;
+        }
+
+        public void setComissao (double comissao){
+            this.comissao = comissao;
+        }
+
+        public void setBonus (double bonus){
+            this.bonus = bonus;
+        }
+
+
+
         public double calcularSlario(){
             if (tipo == 1){
                 return salario;
